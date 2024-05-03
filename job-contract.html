@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer - Job Contract</title>
+
+    <!--asset-->
+    <link rel="shortcut icon" type="text/css" href="asset/img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/css-table-19/css/style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="vendor/fontawesome/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+
+    <!-- Bootstrap daterangepicker -->
+    <link rel="stylesheet" href="vendor/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <!--Custom CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/employer.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 sidebar">
+                    <div class="sidebar-header">
+                        <div class="sidebar-close d-lg-none"></div>
+                        <div class="logo">
+                            <img src="asset/img/logo-light.png" class="img-fluid mb-2 sidebar-logo" alt="">
+                        </div>
+                    </div>
+                    <div class="sidebar-content">
+                        <ul class="sidebar-nav-links">
+                            <li class="adm-sidebar-link-item">
+                                <a href="index.html" class="sidebar-link">
+                                    <img src="asset/img/dashboard-img.png" alt="">
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="internship-connect.html" class="sidebar-link">
+                                    <img src="asset/img/intern-icon.png" alt="">
+                                    Internship Connect
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="intern-management.html" class="sidebar-link">
+                                    <img src="asset/img/employee-icon.png" alt="">
+                                    Intern Management
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="employment-corner.html" class="sidebar-link active">
+                                    <img src="asset/img/briefcase-solid.png" alt="">
+                                    Employment Corner
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="employee-management.html" class="sidebar-link">
+                                    <img src="asset/img/employee-icon.png" alt="">
+                                    Employee Management
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="schedule.html" class="sidebar-link">
+                                    <img src="asset/img/schedule_icon.png" alt="">
+                                    Schedules
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="message.html" class="sidebar-link">
+                                    <img src="asset/img/konnect-icon.png" alt="">
+                                    Messages
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sidebar-footer">
+                            <a href="profile.html" class="sidebar-link mb-5">
+                                <img src="asset/img/setting-icon-light.png" alt="">
+                                My Account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 main">
+                    <div class="container-fluid px-4">
+                        <div class="main-header">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="menu harmburger-menu d-lg-none">
+                                    <div class="menu"></div>
+                                 </div>
+                                <h1 class="heading">Employment Corner</h1>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+    
+                                <div class="profile-dropdown notify-dropdown">
+                                    <div class="drop-now">
+                                        <img src="asset/img/notification-icon.png" alt="">
+                                    </div>
+                                    <div class="profile-dropdown-items notify-dropdown-items d-none">
+                                        <div class="d-flex align-items-center justify-content-between mb-4">
+                                            <h4 class="heading">Notifications</h4>
+                                            <span>  <i class="fa fa-check-double"></i> Mark all as read</span>
+                                        </div>
+                                        <div class="notify-dropdown-item">
+                                            <div class="notice-ctn">
+                                                <div class="img">
+                                                    <img src="asset/img/user-picture.png" alt="">
+                                                </div>
+                                                <div class="notice">
+                                                    <p>
+                                                        <b>John Does</b> added a new course, check this out!
+                                                    </p>
+                                                    <small class="time">23 mins ago</small>
+                                                </div>
+                                                <div class="resta"></div>
+                                            </div>
+                                            <div class="notice-ctn">
+                                                <div class="img">
+                                                    <img src="asset/img/user-picture.png" alt="">
+                                                </div>
+                                                <div class="notice">
+                                                    <p>
+                                                        <b>John Does</b> added a new course, check this out!
+                                                    </p>
+                                                    <small class="time">23 mins ago</small>
+                                                </div>
+                                                <!-- <div class="resta"></div> -->
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="notifications.html" class="notify-btn">See all notifications</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="profile-dropdown">
+                                    <div class="drop-now d-flex align-items-center justify-content-between gap-4">
+                                        <div class="d-flex align-items-center align-items-start gap-3">
+                                            <div class="img">
+                                                <img src="asset/img/user-picture.png" class="img-flui" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <span class="name">Williams</span>
+                                                <span class="role">Employer</span>
+                                            </div>
+                                        </div>
+                                        <div class="directions close">
+                                            <i class="fa fa-chevron-down"></i>
+                                            <i class="fa fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                    <ul class="profile-dropdown-items profile-items d-none">
+                                        <li class="dropdown-item">
+                                            <a href="profile.html">
+                                            <img src="asset/img/user-icon-dark.png" class="img-fluid" alt="icon">Profile</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="projkonnect-ai.html">
+                                            <img src="asset/img/projkonnectai_icon.png" class="img-fluid" alt="icon">Projkonnect AI</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="profile.html">
+                                            <img src="asset/img/setting-icon-dark.png" class="img-fluid" alt="icon">Settings</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="help-center.html">
+                                            <img src="asset/img/message-question-icon.png" class="img-fluid" alt="icon">Help center</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="../login.html">
+                                            <img src="asset/img/login-icon.png" class="img-fluid" alt="icon">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <div class="mb-4">
+                                    <span class="g-heading">Draft Contract</span>
+                            </div>
+                            <form>
+                                <div class="row align-items-end">
+                                <div class="col-md-7 mb-4">
+
+                                    <div id="contract-ctn">
+                                        <div class="form-group w-100">
+                                               <textarea name="" class="form-control border-0" placeholder="Enter contract terms" rows="10"></textarea>
+                                        </div>
+                                        <div id="signatories">
+                                            <div class="signate">
+                                                <span>John Karls Doe</span>
+                                                <span>(Employer)</span>
+                                            </div>
+                                            <div class="signate">
+                                                <span>Mary Doe</span>
+                                                <span>(Employee)</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 mb-4">
+                                    <div class="form-group mb-4">
+                                        <h6>Employer Name</h6>
+                                        <input type="text" name="" value="John Karls Doe" class="form-control custom">
+                                    </div>
+                                    <div class="form-group mb-4">
+                                        <h6>Employee Name</h6>
+                                        <input type="text" name="" value="Mary Doe" class="form-control custom">
+                                    </div>
+                                    <div id="signature">
+                                        <div class="form-group evid-ctn">
+                                            <div class="proj-file-ctn"></div>
+                                            <label class="proj-label" ><span>Upload signature</span> <img src="asset/img/upload-icon.png" width="20px" alt=""> </label>
+                                            <input type="file"  name="files" class="form-control default-input off-screen proj-file">
+                                        </div>
+                                    </div>
+                                    <div class="text-end mt-4">
+                                        <button type="button" class="new-discussion-btn px-5" data-bs-toggle="modal"
+                                        data-bs-target="#successModal">Done</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </form>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+             <div class="modal-content">
+                  <div class="modal-body rounded">
+                    <div class="d-flex align-items-center justify-content-center mb-2 mt-3">
+                        <img src="asset/img/success-star-checked.png" width="50px" alt="icon">
+                    </div>
+                       <h3 class="text-center mb-2">Success!</h3>
+                      <div class="text-center mb-2">
+                        You have successfully drated a contract for the Junior Product Designer role between Karls Max (you) and Jane Doe.
+                      </div>
+                        <a href="employment-corner.html" class="new-discussion-btn d-block text-center w-100 mb-2">Go Home</a>
+                  </div>
+             </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS FILES -->
+    <script src="vendor/jquery/jQuery3.6.1.min.js"></script>
+    <script src="vendor/popper/popper.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="vendor/fontawesome/all.min.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/moment/moment.min.js"></script>
+    <script src="vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="asset/js/dashboard.js"></script> -->
+    <script src="asset/js/plugins_init.js"></script>
+    <script src="asset/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('body').on('click', '.proj-label', function(){
+                $(this).siblings('input[type="file"]').click();
+            })
+
+            $('body').on('change', '.proj-file', function() {
+                let _this = $(this);
+                let html = `
+                            <div class="report-evid">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <small style="opacity: 0.6"><i>Uploading...</i></small>
+                                    <div id='percent' class="percent">0%</div>
+                                </div>
+                                <div class="progress" id="progress">
+                                    <div class="bar" id="bar"></div>
+                                </div>
+                            </div>
+                            `;
+
+                var container = $(this).parent('.evid-ctn').find('.proj-file-ctn');
+                container.html(html);
+
+                var initialWidth = 0;
+                var targetWidth = parseInt(_this.parent('.evid-ctn').children('.proj-file-ctn').find('.progress').innerWidth());
+
+                function increaseProgress() {
+                
+                var newWidth = (initialWidth / targetWidth) * 100;
+                _this.parent('.evid-ctn').children('.proj-file-ctn').find(`.bar`).css('width', newWidth + '%');
+                initialWidth += 1;
+
+                _this.parent('.evid-ctn').children('.proj-file-ctn').find(`.percent`).text(parseInt(newWidth) + '%');
+
+                if (initialWidth <= targetWidth) {
+                    // Repeat the process after a short delay
+                    setTimeout(increaseProgress, 10);
+                }
+                
+                    if(newWidth == 100){
+                            setTimeout(() => {
+                                _this.parent('.evid-ctn').children('.proj-file-ctn').find(`small`).text(`Uploaded`);
+                                _this.parent('.evid-ctn').find('.bar').css({backgroundColor: 'green'});
+                            }, 1000);
+                    }
+                }
+                    
+                increaseProgress();
+            });
+
+        })
+    </script>
+</body>
+
+</html>
