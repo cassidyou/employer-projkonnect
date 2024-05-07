@@ -245,6 +245,15 @@
      max-height: 320px!important;
  }
 
+
+ @media (max-width: 375px){
+     #jobInternChart{
+          min-width: 300px!important;
+     }
+ }
+
+ 
+
  .intern-img{
      display: flex;
      align-items: center;
@@ -264,6 +273,7 @@
      align-items: center;
      justify-content: center;
      width: 40px;
+     min-width: 40px;
      height: 40px;
      border-radius: 50%;
      overflow: hidden;
@@ -291,4 +301,11 @@
  .intern-task-img img{
      height: 100%;
      width: auto;
+ }
+
+ .question-ctn{
+     display: flex;
+     align-items: center;
+     justify-content: start;
+     gap: 10px;
  }
