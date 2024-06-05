@@ -29,9 +29,8 @@ $(document).ready(function(){
                               borderWidth: "0",
                               borderRadius: 0,
                               barThickness: thickness,
-                              hoverBackgroundColor: '#FDC10B',
-                              backgroundColor: '#FDC10B',
-                              
+                              hoverBackgroundColor: '#8014F8FC',
+                              backgroundColor: '#8014F8FC',
                               tension: 0.5,
                               fill: false,
                          
@@ -43,9 +42,8 @@ $(document).ready(function(){
                               borderWidth: "0",
                               borderRadius: 0,
                               barThickness: thickness,
-                              hoverBackgroundColor: '#97CD66',
-                              backgroundColor: '#97CD66',
-                              
+                              hoverBackgroundColor: ' #007CFE',
+                              backgroundColor: ' #007CFE',
                               tension: 0.5,
                               fill: false,
                          
