@@ -429,37 +429,39 @@
                                            </div>
                                       </div>
                                       <div class="message-main-footer">
-                                           <div class="recorder-board" style="display: none;">
-                                                <div class="mb-3 d-flex align-items-center justify-content-start gap-3">
-                                                     <span class="recorder-duration" id="recordingDuration">1:24 Recording...</span>
-                                                     <div>
-                                                          <div class="recorder-play d-none" id="playRecording"><i class="fa fa-play"></i></div>
-                                                          <div class="pause-record d-none" id="pausePlayRecording"><i class="fas fa-pause"></i></div>
-   
-                                                     </div>
-                                                </div>
-                                                <div class="d-flex align-items-center justify-content-between">
-                                                     <div class="delete-record" id="deleteRecording"><i class="fa fa-trash-alt"></i></div>
-                                                     <div>
-                                                          <div class="resume-record d-none" id="resumeRecording"><i class="fas fa-microphone"></i></div>
-                                                          <div class="pause-record" id="pauseRecording"><i class="fas fa-pause"></i></div>
-                                                     </div>
-                                                     <div class="send-record" id="stopRecording">
-                                                          <i class="fas fa-paper-plane"></i>
-                                                     </div>
-                                                </div>
-                                           </div>
-                                           <div class="input-group">
-                                                <img src="asset/img/happyemoji.png" data-icon="emoji" alt="icon">
-                                                <label for="attachment">
-                                                     <img src="asset/img/message-attachment-icon.png" data-icon="attachment" alt="icon">
-                                                     <input type="file" id="attachment" class="d-none">
-                                                </label>
-                                               
-                                                <input type="text" name="message" placeholder="Type a message">
-                                                <img src="asset/img/microphone-2.png" id="startRecording" data-icon="microphone" alt="icon">
-                                           </div>
-                                      </div>
+                                        <div class="recorder-board" style="display: none;">
+                                             <div class="mb-3 d-flex align-items-center justify-content-start gap-3">
+                                                  <span class="recorder-duration" id="recordingDuration">1:24 Recording...</span>
+                                                  <div>
+                                                       <div class="recorder-play d-none" id="playRecording"><i class="fa fa-play"></i></div>
+                                                       <div class="pause-record d-none" id="pausePlayRecording"><i class="fas fa-pause"></i></div>
+
+                                                  </div>
+                                             </div>
+                                             <div class="d-flex align-items-center justify-content-between">
+                                                  <div class="delete-record" id="deleteRecording"><i class="fa fa-trash-alt"></i></div>
+                                                  <div>
+                                                       <div class="resume-record d-none" id="resumeRecording"><i class="fas fa-microphone"></i></div>
+                                                       <div class="pause-record" id="pauseRecording"><i class="fas fa-pause"></i></div>
+                                                  </div>
+                                                  <div class="send-record" id="stopRecording">
+                                                       
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <form action="" id="chat-form">
+                                             <div class="input-group">
+                                                  <img src="asset/img/happyemoji.png" data-icon="emoji" alt="icon">
+                                                  <label for="attachment">
+                                                       <img src="asset/img/message-attachment-icon.png" data-icon="attachment" alt="icon">
+                                                       <input type="file" id="attachment" class="d-none">
+                                                  </label>
+                                                 
+                                                  <input type="text" id="chat-input-message" name="message" placeholder="Type a message">
+                                                 <button id="sendChatBtn"><i class="fas fa-paper-plane"></i></button>
+                                             </div>
+                                        </form>
+                                   </div>
                                  </div>
                             </div>
                          </div>
@@ -502,6 +504,51 @@
     <!-- <script src="asset/js/dashboard.js"></script> -->
     <script src="asset/js/plugins_init.js"></script>
     <script src="asset/js/main.js"></script>
+        <script>
+     $(document).ready(function(){
+          $('#msg-menu').on('click', function(){
+               if($(this).siblings('.new-group-ctn').hasClass('opened')){
+                    $(this).siblings('.new-group-ctn').animate({right: '-200px'});
+                    $(this).siblings('.new-group-ctn').removeClass('opened');
+               }else{
+                    $(this).siblings('.new-group-ctn').animate({right: '0px'});
+                    $(this).siblings('.new-group-ctn').addClass('opened');
+               }
+          });
+
+
+          $('#open-ng-ctn').on('click', function(){
+
+          });
+
+
+          $('#chat-form').on('submit', function(e){
+               e.preventDefault();
+               var container =   $('.message-main-body');
+              var messageCtn = $(this).find('#chat-input-message');
+               var message = messageCtn.val();
+              if(!message.trim() == ''){
+                    var html = `
+                    <div class="sent-ctn">
+                         <div class="sent">
+                              <p>
+                                  ${message}
+                              </p>
+                              <div class="d-flex align-items-center justify-content-end gap-1">
+                                   <small>3:57PM</small>
+                                   <img src="asset/img/message-seen-icon.png" alt="icon">
+                              </div>
+                         </div>
+                    </div>
+                    `;
+
+                    container.append(html);
+                    messageCtn.val('');
+                    container.scrollTop(container.prop("scrollHeight"));
+              }
+          })
+     });
+    </script>
 </body>
 
 </html>

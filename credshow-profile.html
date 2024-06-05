@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer - CredShow Profile</title>
+
+    <!--asset-->
+    <link rel="shortcut icon" type="text/css" href="asset/img/favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="https://preview.colorlib.com/theme/bootstrap/css-table-19/css/style.css">
+
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="vendor/fontawesome/all.min.css">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="vendor/datatables/css/jquery.dataTables.min.css">
+
+    <!-- Bootstrap daterangepicker -->
+    <link rel="stylesheet" href="vendor/bootstrap-daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.7.8/plyr.css" />
+    <script src="https://cdn.plyr.io/3.7.8/plyr.js"></script>
+
+    <!--Custom CSS-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/employer.css">
+    <link rel="stylesheet" href="asset/css/responsive.css">
+
+</head>
+
+<body>
+    <div class="page-wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 sidebar">
+                    <div class="sidebar-header">
+                        <div class="sidebar-close d-lg-none"></div>
+                        <div class="logo">
+                            <img src="asset/img/logo-light.png" class="img-fluid mb-2 sidebar-logo" alt="">
+                        </div>
+                    </div>
+                    <div class="sidebar-content">
+                        <ul class="sidebar-nav-links">
+                            <li class="adm-sidebar-link-item">
+                                <a href="index.html" class="sidebar-link">
+                                    <img src="asset/img/dashboard-img.png" alt="">
+                                    Dashboard
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="internship-connect.html" class="sidebar-link active">
+                                    <img src="asset/img/intern-icon.png" alt="">
+                                    Internship Connect
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="intern-management.html" class="sidebar-link">
+                                    <img src="asset/img/employee-icon.png" alt="">
+                                    Intern Management
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="employment-corner.html" class="sidebar-link">
+                                    <img src="asset/img/briefcase-solid.png" alt="">
+                                    Employment Corner
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="employee-management.html" class="sidebar-link">
+                                    <img src="asset/img/employee-icon.png" alt="">
+                                    Employee Management
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="schedule.html" class="sidebar-link">
+                                    <img src="asset/img/schedule_icon.png" alt="">
+                                    Schedules
+                                </a>
+                            </li>
+                            <li class="adm-sidebar-link-item">
+                                <a href="message.html" class="sidebar-link">
+                                    <img src="asset/img/konnect-icon.png" alt="">
+                                    Messages
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="sidebar-footer">
+                            <a href="profile.html" class="sidebar-link mb-5">
+                                <img src="asset/img/setting-icon-light.png" alt="">
+                                My Account
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-10 main">
+                    <div class="container-fluid px-4">
+                        <div class="main-header">
+                            <div class="d-flex align-items-start gap-3">
+                                <div class="menu harmburger-menu d-lg-none">
+                                    <div class="menu"></div>
+                                 </div>
+                                <h1 class="heading">Internship Connect</h1>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-between">
+    
+                                <div class="profile-dropdown notify-dropdown">
+                                    <div class="drop-now">
+                                        <img src="asset/img/notification-icon.png" alt="">
+                                    </div>
+                                    <div class="profile-dropdown-items notify-dropdown-items d-none">
+                                        <div class="d-flex align-items-center justify-content-between mb-4">
+                                            <h4 class="heading">Notifications</h4>
+                                            <span>  <i class="fa fa-check-double"></i> Mark all as read</span>
+                                        </div>
+                                        <div class="notify-dropdown-item">
+                                            <div class="notice-ctn">
+                                                <div class="img">
+                                                    <img src="asset/img/user-picture.png" alt="">
+                                                </div>
+                                                <div class="notice">
+                                                    <p>
+                                                        <b>John Does</b> added a new course, check this out!
+                                                    </p>
+                                                    <small class="time">23 mins ago</small>
+                                                </div>
+                                                <div class="resta"></div>
+                                            </div>
+                                            <div class="notice-ctn">
+                                                <div class="img">
+                                                    <img src="asset/img/user-picture.png" alt="">
+                                                </div>
+                                                <div class="notice">
+                                                    <p>
+                                                        <b>John Does</b> added a new course, check this out!
+                                                    </p>
+                                                    <small class="time">23 mins ago</small>
+                                                </div>
+                                                <!-- <div class="resta"></div> -->
+                                            </div>
+                                            <div class="text-center">
+                                                <a href="notifications.html" class="notify-btn">See all notifications</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+    
+                                <div class="profile-dropdown">
+                                    <div class="drop-now d-flex align-items-center justify-content-between gap-4">
+                                        <div class="d-flex align-items-center align-items-start gap-3">
+                                            <div class="img">
+                                                <img src="asset/img/user-picture.png" class="img-flui" alt="">
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <span class="name">Williams</span>
+                                                <span class="role">Employer</span>
+                                            </div>
+                                        </div>
+                                        <div class="directions close">
+                                            <i class="fa fa-chevron-down"></i>
+                                            <i class="fa fa-chevron-up"></i>
+                                        </div>
+                                    </div>
+                                    <ul class="profile-dropdown-items profile-items d-none">
+                                        <li class="dropdown-item">
+                                            <a href="profile.html">
+                                            <img src="asset/img/user-icon-dark.png" class="img-fluid" alt="icon">Profile</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="https://cassidyou.github.io/projkonnect/" target="_blank">
+                                            <img src="asset/img/globe-icon.svg" class="img-fluid" alt="icon">Homepage</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="projkonnect-ai.html">
+                                            <img src="asset/img/projkonnectai_icon.png" class="img-fluid" alt="icon">MindBridge AI</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="help-center.html">
+                                            <img src="asset/img/message-question-icon.png" class="img-fluid" alt="icon">Help center</a>
+                                        </li>
+                                        <li class="dropdown-item">
+                                            <a href="../login.html">
+                                            <img src="asset/img/login-icon.png" class="img-fluid" alt="icon">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main-content">
+                            <div class="row">
+                              
+                             <div class="col-12 mb-5">
+                                <h4>Junior Product Designer (Applicants)</h4>
+                             </div>
+                             <div class="col-lg-12 mb-4">
+                              <div class="col-12">
+                                   <form id="create-credshow-form">
+                                        <div id="cred-tabs">
+                                             <!-- *************** Preview Tab *******************-->
+                                             <div class="cred-tab" style="display: block!important;">
+                                                  <div class="header-lg-ctn mb-5">
+                                                       <h2>CredShow Profile</h2>
+                                                   </div>
+                                                  <div class="d-flex justify-content-center">
+                                                       <div class="cred-profile-img">
+                                                            <img src="asset/img/user-picture.png" alt="Profile picture">
+                                                       </div>
+                                                  </div>
+                                                  <div class="d-flex justify-content-center">
+                                                       <div class="cred-prev-header">
+                                                            Resume
+                                                       </div>
+                                                  </div>
+                                                  <h5>Personal Information</h5>
+                                                  <div class="row">
+                                                       <div class="col-md-4 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="John Doe" disabled placeholder="Full Name" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-4 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="+285478412547" disabled placeholder="Phone Number" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-4 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="johdoe@gmail.com" disabled placeholder="E-mail Address" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="row align-items-stretch">
+                                                       <div class="col-md-4 mb-4">
+                                                            <div class="form-group">
+                                                                 <textarea disabled class="form-control h-100" placeholder="Address" id="" cols="30" rows="3">No. 44 John Doe Street, State Country</textarea>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-4 mb-4">
+                                                            <div class="form-group mb-2">
+                                                                 <input type="text" class="form-control" value="https://instagram.com/johndoe" disabled placeholder="Instagram Link (optional)" id="" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                 <input type="text" class="form-control" value="https://behance.com/johndoe" disabled placeholder="Behance Link (optional)" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-4 mb-4">
+                                                            <div class="form-group mb-2">
+                                                                 <input type="text" class="form-control" disabled value="https://twitter.com/johndoe" placeholder="Twitter Link (optional)" id="" class="form-control">
+                                                            </div>
+                                                            <div class="form-group">
+                                                                 <input type="text" class="form-control" disabled value="https://github.io/johdoe" placeholder="Github Link (optional)" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <h5>Educational Background</h5>
+                                                  <div class="row">
+                                                       <div class="col-md-8 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="Wallack University, Tokyo" disabled placeholder="School Attended" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="BSc" disabled placeholder="Degree Obtained" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="4.00" disabled placeholder="CGPA" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <textarea name="" class="form-control" placeholder="Relevant Coursework" disabled cols="30" rows="5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam ad eos sit quod facere molestias sapiente veniam perspiciatis voluptate fugiat?</textarea>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <textarea name="" class="form-control" placeholder="Academic Projects" disabled cols="30" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae aliquid necessitatibus enim corrupti autem accusamus!</textarea>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <h5>Work Experience</h5>
+                                                 <div class="row">
+                                                  <div class="col-md-3 mb-4">
+                                                       <div class="form-group">
+                                                            <input type="text" value="Wallack Universy, Tokyo" placeholder="Institution" id="" class="form-control">
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-3 mb-4">
+                                                       <div class="form-group">
+                                                            <input type="text" value="Junior Lecturer" disabled placeholder="Position Held" id="" class="form-control">
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-3 mb-4">
+                                                       <div class="form-group">
+                                                            <input type="text" value="20th June, 2002" disabled placeholder="Start Date" id="" class="form-control">
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-3 mb-4">
+                                                       <div class="form-group">
+                                                            <input type="text" value="29th July, 2023" placeholder="End Date" id="" class="form-control">
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea disabled class="form-control" placeholder="Responsibilities" id="" cols="30" rows="5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores, ad.</textarea>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea disabled class="form-control" placeholder="Achievements" id="" cols="30" rows="5">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, aliquid.</textarea>
+                                                       </div>
+                                                  </div>
+                                                 </div>
+                                                 <h5>Certifications</h5>
+                                                 <div class="row">
+                                                       <div class="col-md-5 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="Bachelor of Science in Computer Studies" disabled placeholder="Certification name" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-5 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="Wallack University, Tokyo" disabled placeholder="Issuing Organization" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="1980" disabled placeholder="Year of acquisition" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-5 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="Master of Science in Computer Science" disabled placeholder="Certification name" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-5 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="Wallack University, Tokyo" placeholder="Issuing Organization" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" value="1985" disabled placeholder="Year of acquisition" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                 </div>
+                                                 <h5>Honors and Awards <i class="op-6">(scholarships, dean's list, honor societies)</i></h5>
+                                                 <div class="row">
+                                                  <div class="col-md-4 mb-4">
+                                                       <div class="d-flex align-items-center justify-content-between honor-ctn">
+                                                            <span>Scholarships</span>
+                                                            <img src="asset/img/pdf_icon.png" width="30px" alt="icon">
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-4 mb-4">
+                                                       <div class="d-flex align-items-center justify-content-between honor-ctn">
+                                                            <span>Scholarships</span>
+                                                            <img src="asset/img/pdf_icon.png" width="30px" alt="icon">
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-4 mb-4">
+                                                       <div class="d-flex align-items-center justify-content-between honor-ctn">
+                                                            <span>Awards</span>
+                                                            <img src="asset/img/pdf_icon.png" width="30px" alt="icon">
+                                                       </div>
+                                                  </div>
+                                                 </div>
+                                                 <h5>Activities</h5>
+                                                 <div class="row">
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea name="" class="form-control" disabled placeholder="Student Organizations" id="" cols="30" rows="5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus, minima.</textarea>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea name="" class="form-control" disabled placeholder="Sport Teams" id="" cols="30" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, obcaecati.</textarea>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea name="" class="form-control" disabled placeholder="Conferences Attended" id="" cols="30" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, nisi?</textarea>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea disabled class="form-control" placeholder="Student Clubs" id="" cols="30" rows="5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, quidem?</textarea>
+                                                       </div>
+                                                  </div>
+                                                 </div>
+                                                 <h5>Volunteering</h5>
+                                                 <div class="row">
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <input type="text" disabled value="Wallack University, Tokyo" class="form-control" placeholder="Name of Organization">
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <input type="text" disabled value="12 months" class="form-control" placeholder="Volunteering Duration">
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea name="" class="form-control" placeholder="Causes Supported" disabled cols="30" rows="5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit, architecto?</textarea>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea name="" class="form-control" placeholder="Accomplishments/responsibilities" disabled cols="30" rows="5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, maiores.</textarea>
+                                                       </div>
+                                                  </div>
+                                                 </div>
+                                                 <h5>Additional</h5>
+                                                 <div class="row">
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea name="" class="form-control" placeholder="Publications" id="" cols="30" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, rerum.</textarea>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea name="" class="form-control" placeholder="Leadership Roles" id="" cols="30" rows="5" disabled>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, rerum.</textarea>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea name="" class="form-control" placeholder="Interests" id="" cols="30" rows="5" disabled>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, impedit?</textarea>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6 mb-4">
+                                                       <div class="form-group">
+                                                            <textarea name="" class="form-control" placeholder="Hobbies" id="" cols="30" rows="5" disabled>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda, impedit?</textarea>
+                                                       </div>
+                                                  </div>
+                                                 </div>
+                                                 <div class="d-flex justify-content-center">
+                                                      <div class="cred-prev-header">
+                                                            Skills
+                                                       </div>
+                                                 </div>
+                                                  <div class="d-flex align-items-center justify-content-between">
+                                                       <h5>Skill</h5>
+                                                       <h5>Proficiency</h5>
+                                                  </div>
+                                                  <div class="row mb-4">
+                                                       <div class="col-md-5 col-7">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="UI/UX" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2 d-none d-md-block"></div>
+                                                       <div class="col-md-5 col-5">
+                                                            <div class="form-group">
+                                                                 <select name="" class="form-control" id="">
+                                                                      <option value="">Select</option>
+                                                                      <option selected value="">Beginner</option>
+                                                                      <option value="">Intermediate</option>
+                                                                      <option value="" selected>Advanced</option>
+                                                                      <option value="">Expert</option>
+                                                                      <option value="">Master</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="row mb-4">
+                                                       <div class="col-md-5 col-7">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="Frontend Development" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2 d-none d-md-block"></div>
+                                                       <div class="col-md-5 col-5">
+                                                            <div class="form-group">
+                                                                 <select name="" class="form-control" id="">
+                                                                      <option value="">Select</option>
+                                                                      <option value="">Beginner</option>
+                                                                      <option selected value="">Intermediate</option>
+                                                                      <option value="">Advanced</option>
+                                                                      <option value="">Expert</option>
+                                                                      <option value="" selected>Master</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="row mb-4">
+                                                       <div class="col-md-5 col-7">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="Data Analysis" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2 d-none d-md-block"></div>
+                                                       <div class="col-md-5 col-5">
+                                                            <div class="form-group">
+                                                                 <select name="" class="form-control" id="">
+                                                                      <option value="">Select</option>
+                                                                      <option value="">Beginner</option>
+                                                                      <option value="">Intermediate</option>
+                                                                      <option selected value="">Advanced</option>
+                                                                      <option value="" selected>Expert</option>
+                                                                      <option value="">Master</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="row mb-4">
+                                                       <div class="col-md-5 col-7">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="Artificial Intelligence" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2 d-none d-md-block"></div>
+                                                       <div class="col-md-5 col-5">
+                                                            <div class="form-group">
+                                                                 <select name="" class="form-control" id="">
+                                                                      <option value="">Select</option>
+                                                                      <option value="">Beginner</option>
+                                                                      <option value="">Intermediate</option>
+                                                                      <option value="">Advanced</option>
+                                                                      <option selected value="">Expert</option>
+                                                                      <option value="">Master</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="row mb-4">
+                                                       <div class="col-md-5 col-7">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="Cyber Security" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-2 d-none d-md-block"></div>
+                                                       <div class="col-md-5 col-5">
+                                                            <div class="form-group">
+                                                                 <select name="" class="form-control" id="">
+                                                                      <option value="">Select</option>
+                                                                      <option value="">Beginner</option>
+                                                                      <option value="">Intermediate</option>
+                                                                      <option value="">Advanced</option>
+                                                                      <option value="">Expert</option>
+                                                                      <option selected value="">Master</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="d-flex justify-content-center">
+                                                       <div class="cred-prev-header">
+                                                             Projects
+                                                        </div>
+                                                  </div>
+                                                  <div class="d-flex align-items-center justify-content-between mb-3">
+                                                       <h5>Academic Projects</h5>
+                                                      
+                                                  </div>
+                                                  <div class="row">
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="Wallack Student Portal Development" placeholder="Project Name" name="" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="6 months" placeholder="Project Duration" name="" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <textarea name="" id="" cols="30" disabled placeholder="Project Summary" rows="4" class="form-control h-100">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam, amet aut. Officia architecto debitis sunt id amet necessitatibus voluptas facere!</textarea>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="input-ctn border h-100 p-3">
+                                                                 <div class="form-group evid-ctn mt-2">
+                                                                      <label class="proj-label" ><span>Download project documents</span> <i class="fa fa-download"></i> </label>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="d-flex align-items-center justify-content-between mb-3">
+                                                       <h5>Professional Projects</h5>
+                                                       
+                                                  </div>
+                                                  <div class="row">
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="Computer Science Department web app" placeholder="Project Name" name="" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="12 months" placeholder="Project Duration" name="" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <textarea name="" id="" cols="30" disabled placeholder="Project Summary" rows="4" class="form-control h-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda quasi dolores nihil?</textarea>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="input-ctn border h-100 p-3">
+                                                                 <div class="form-group evid-ctn mt-2">
+                                                                      <label class="proj-label" ><span>Download project documents</span> <i class="fa fa-download"></i> </label>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="d-flex align-items-center justify-content-between mb-3">
+                                                       <h5>Personal Projects</h5>
+                                                      
+                                                  </div>
+                                                  <div class="row">
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="Computer Science Department web app" placeholder="Project Name" name="" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <input type="text" disabled value="12 months" placeholder="Project Duration" name="" id="" class="form-control">
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="form-group">
+                                                                 <textarea name="" id="" cols="30" disabled placeholder="Project Summary" rows="4" class="form-control h-100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda quasi dolores nihil?</textarea>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6 mb-4">
+                                                            <div class="input-ctn border h-100 p-3">
+                                                                 <div class="form-group evid-ctn mt-2">
+                                                                      <label class="proj-label" ><span>Download project documents</span> <i class="fa fa-download"></i> </label>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+
+                                                  <div class="d-flex justify-content-center">
+                                                       <div class="cred-prev-header">
+                                                             Video Pitch
+                                                        </div>
+                                                  </div>
+                                                  <div class="prevido mb-4">
+                                                       <div class="d-flex align-items-center justify-content-start gap-3">
+                                                            <img src="asset/img/video-play-icon.png" width="30px" alt="icon">
+                                                            <span>Video Pitch</span>
+                                                       </div>
+                                                       <div id="remove-prevido">
+                                                            <i class="fa fa-download"></i>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                        <div class="d-flex align-items-center justify-content-between mt-5">
+                                             <button type="button" class="new-discussion-btn danger text-center d-block mb-2">Reject</button>
+                                             <a href="shortlisted.html" type="button" class="new-discussion-btn text-center mb-2">Shortlist</a>
+                                         </div>
+                                   </form>
+                              </div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+             <div class="modal-content">
+                  <div class="modal-body rounded">
+                    <div class="d-flex align-items-center justify-content-center mb-2 mt-3">
+                        <img src="asset/img/success-star-checked.png" width="50px" alt="icon">
+                    </div>
+                       <h3 class="text-center mb-2">Success!</h3>
+                      <div class="text-center mb-2">
+                        You have successfully registered for a LiveLearn Session.
+                      </div>
+                        <button type="button" class="new-discussion-btn w-100 mb-2">Go Back</button>
+                  </div>
+             </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="internModal" tabindex="-1" aria-labelledby="internModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-dialog-centered">
+             <div class="modal-content">
+                  <div class="modal-body rounded">
+                    <div class="d-flex align-items-center justify-content-center mb-2 mt-3">
+                        <div class="student-img">
+                            <img src="asset/img/team3.png" alt="icon">
+                        </div>
+                    </div>
+                    <h6 class="text-center mb-2">Mary Williams</h6>
+                    <h5 class="text-center mb-5">Junior Product Designer</h5>
+                    <div class="d-flex align-items-center justify-content-between gap-4">
+                        <button type="button" class="new-discussion-btn w-100 danger text-center d-block mb-2" data-bs-dismiss="modal">Reject</button>
+                        <a href="shortlisted.html" type="button" class="new-discussion-btn text-center w-100 mb-2">Shortlist</a>
+                    </div>
+                  </div>
+             </div>
+        </div>
+    </div>
+
+
+
+    <!-- JS FILES -->
+    <script src="vendor/jquery/jQuery3.6.1.min.js"></script>
+    <script src="vendor/popper/popper.js"></script>
+    <script src="vendor/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="vendor/fontawesome/all.min.js"></script>
+    <script src="vendor/jquery-validate/jquery.validate.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="vendor/moment/moment.min.js"></script>
+    <script src="vendor/bootstrap-daterangepicker/daterangepicker.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- <script src="asset/js/dashboard.js"></script> -->
+    <script src="asset/js/plugins_init.js"></script>
+    <script src="asset/js/main.js"></script>
+</body>
+
+</html>

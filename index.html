@@ -18,6 +18,7 @@
 
     <!-- Swiper CSS -->
     <link rel="stylesheet" href="vendor/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="vendor/datatables/css/jquery.dataTables.min.css">
 
     <!-- Bootstrap daterangepicker -->
     <link rel="stylesheet" href="vendor/bootstrap-daterangepicker/daterangepicker.css">
@@ -400,6 +401,13 @@
     <script src="asset/js/dashboard.js"></script>
     <script src="asset/js/plugins_init.js"></script>
     <script src="asset/js/main.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#livelearn-table_filter').addClass('d-none');
+            $('#livelearn-table_paginate').addClass('d-none');
+            $('#livelearn-table_info').addClass('d-none');
+        });
+    </script>
 </body>
 
 </html>
